@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-img=cv2.imread("/home/gopi/image_to_pencil_sketch/car.jpg")
+img=cv2.imread("car.jpg")
 
 resize = cv2.resize(img,(0,0),fx=0.4,fy=0.4)
 
@@ -16,5 +16,5 @@ cv2.imshow("Image",sketch)
 cv2.waitKey(6000)
 cv2.destroyAllWindows()
 
-status=cv2.imwrite("/home/gopi/image_to_pencil_sketch/car1.jpeg",sketch)
-print("Image written to file-system",status)
+status=cv2.imwrite("car1.jpeg",sketch)
+print("Image written  to file-system",status)
